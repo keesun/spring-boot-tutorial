@@ -1,0 +1,170 @@
+/\ \       /\  __ \   /\ \
+\ \ \____  \ \ \/\ \  \ \ \____
+ \ \_____\  \ \_____\  \ \_____\
+  \/_____/   \/_____/   \/_____/
+ (v1.0-SNAPSHOT)
+ (v1.2.3.RELEASE)
+2015-05-15 13:50:37.368  INFO 51418 --- [           main] me.whiteship.Application                 : Starting Application v1.0-SNAPSHOT on naverui-mbp-7 with PID 51418 (/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar started by naver in /Users/naver/workspace/spring-boot-tutorial/new_project)
+2015-05-15 13:50:37.416  INFO 51418 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c46e513: startup date [Fri May 15 13:50:37 KST 2015]; root of context hierarchy
+2015-05-15 13:50:38.024  INFO 51418 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-05-15 13:50:38.782  INFO 51418 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-05-15 13:50:39.080  INFO 51418 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-05-15 13:50:39.084  INFO 51418 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-05-15 13:50:39.254  INFO 51418 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-05-15 13:50:39.254  INFO 51418 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1842 ms
+/\ \       /\  __ \   /\ \
+\ \ \____  \ \ \/\ \  \ \ \____
+ \ \_____\  \ \_____\  \ \_____\
+  \/_____/   \/_____/   \/_____/
+ (v1.0-SNAPSHOT)
+ (v1.2.3.RELEASE)
+2015-05-15 13:50:40.485  INFO 51418 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-15 13:50:40.496  INFO 51418 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-05-15 13:50:40.496  INFO 51418 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-15 13:50:40.567  INFO 51426 --- [           main] me.whiteship.Application                 : Starting Application v1.0-SNAPSHOT on naverui-mbp-7 with PID 51426 (/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar started by naver in /Users/naver/workspace/spring-boot-tutorial/new_project)
+2015-05-15 13:50:40.716  INFO 51426 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c202043: startup date [Fri May 15 13:50:40 KST 2015]; root of context hierarchy
+2015-05-15 13:50:40.910  INFO 51418 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c46e513: startup date [Fri May 15 13:50:37 KST 2015]; root of context hierarchy
+2015-05-15 13:50:41.155  INFO 51418 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String me.whiteship.HelloController.hi()
+2015-05-15 13:50:41.155  INFO 51418 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public me.whiteship.HelloController$Account me.whiteship.HelloController.hello()
+2015-05-15 13:50:41.157  INFO 51418 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-05-15 13:50:41.157  INFO 51418 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-05-15 13:50:41.193  INFO 51418 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:41.193  INFO 51418 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:41.262  INFO 51418 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:41.639  INFO 51426 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2015-05-15 13:50:41.745  INFO 51418 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-05-15 13:50:41.865  INFO 51418 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2015-05-15 13:50:41.871  INFO 51418 --- [           main] me.whiteship.Application                 : Started Application in 4.776 seconds (JVM running for 5.216)
+2015-05-15 13:50:42.788  INFO 51426 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2015-05-15 13:50:42.995  INFO 51426 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2015-05-15 13:50:42.997  INFO 51426 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.0.20
+2015-05-15 13:50:43.109  INFO 51426 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2015-05-15 13:50:43.109  INFO 51426 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2396 ms
+2015-05-15 13:50:43.863  INFO 51426 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2015-05-15 13:50:43.869  INFO 51426 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'characterEncodingFilter' to: [/*]
+2015-05-15 13:50:43.870  INFO 51426 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2015-05-15 13:50:44.160  INFO 51426 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c202043: startup date [Fri May 15 13:50:40 KST 2015]; root of context hierarchy
+2015-05-15 13:50:44.218  INFO 51426 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hi],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String me.whiteship.HelloController.hi()
+2015-05-15 13:50:44.219  INFO 51426 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public me.whiteship.HelloController$Account me.whiteship.HelloController.hello()
+2015-05-15 13:50:44.220  INFO 51426 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2015-05-15 13:50:44.220  INFO 51426 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2015-05-15 13:50:44.248  INFO 51426 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:44.248  INFO 51426 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:44.292  INFO 51426 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2015-05-15 13:50:44.386  INFO 51426 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2015-05-15 13:50:44.441 ERROR 51426 --- [           main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler ["http-nio-8080"]
+
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:343)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:739)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.coyote.http11.Http11NioProtocol.start(Http11NioProtocol.java:81)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at me.whiteship.Application.main(Application.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-05-15 13:50:44.443 ERROR 51426 --- [           main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:154)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:237)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:186)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:149)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at me.whiteship.Application.main(Application.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 16 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:343)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:739)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:472)
+	at org.apache.coyote.http11.Http11NioProtocol.start(Http11NioProtocol.java:81)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 17 common frames omitted
+
+2015-05-15 13:50:44.455  INFO 51426 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2015-05-15 13:50:44.463  INFO 51426 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-starter-web-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-starter-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-autoconfigure-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-starter-logging-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jcl-over-slf4j-1.7.11.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/slf4j-api-1.7.11.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jul-to-slf4j-1.7.11.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/log4j-over-slf4j-1.7.11.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/logback-classic-1.1.3.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/logback-core-1.1.3.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/snakeyaml-1.14.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-boot-starter-tomcat-1.2.3.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/tomcat-embed-core-8.0.20.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/tomcat-embed-el-8.0.20.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/tomcat-embed-logging-juli-8.0.20.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/tomcat-embed-websocket-8.0.20.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jackson-databind-2.4.5.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jackson-annotations-2.4.5.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jackson-core-2.4.5.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/hibernate-validator-5.1.3.Final.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/validation-api-1.1.0.Final.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/jboss-logging-3.1.3.GA.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/classmate-1.0.0.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-core-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-web-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-aop-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/aopalliance-1.0.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-beans-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-context-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-webmvc-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/spring-expression-4.1.6.RELEASE.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/junit-4.12.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/hamcrest-core-1.3.jar!/, jar:file:/Users/naver/workspace/spring-boot-tutorial/new_project/target/new_project-1.0-SNAPSHOT.jar!/lib/springloaded-1.2.1.RELEASE.jar!/]
+2015-05-15 13:50:44.463  INFO 51426 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2015-05-15 13:50:44.464 ERROR 51426 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:157)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at me.whiteship.Application.main(Application.java:17)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015-05-15 13:50:44.464  INFO 51426 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3c202043: startup date [Fri May 15 13:50:40 KST 2015]; root of context hierarchy
+2015-05-15 13:50:44.465  INFO 51426 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+Good Luck!
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:53)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:157)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:288)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:483)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:686)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:320)
+	at me.whiteship.Application.main(Application.java:17)
+	... 6 more
+2015-05-15 13:51:18.513  INFO 51418 --- [       Thread-2] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c46e513: startup date [Fri May 15 13:50:37 KST 2015]; root of context hierarchy
+2015-05-15 13:51:18.515  INFO 51418 --- [       Thread-2] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+Good Luck!

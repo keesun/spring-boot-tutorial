@@ -1,8 +1,6 @@
 package me.whiteship.domains;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * @author Keeun Baik
@@ -13,6 +11,7 @@ public class Account {
     @Id @GeneratedValue
     private long id;
 
+    @Column(unique = true)
     private String username;
 
     private String password;

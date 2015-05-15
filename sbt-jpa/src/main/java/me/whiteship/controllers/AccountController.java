@@ -18,11 +18,11 @@ public class AccountController {
     @Autowired
     AccountRepository repository;
 
-    @RequestMapping("/add")
-    public String add() {
+    @RequestMapping("/add/{username}")
+    public String add(@PathVariable String username) {
         Account account = new Account();
-        account.setUsername("whiteship " + new Date());
-        account.setPassword("whiteship " + new Date());
+        account.setUsername(username);
+        account.setPassword("whiteship");
         Account savedAccount = repository.save(account);
         return "ok " + savedAccount.getId();
     }
@@ -30,6 +30,11 @@ public class AccountController {
     @RequestMapping("/get/{id}")
     public String get(@PathVariable long id) {
         return repository.findOne(id).getUsername();
+    }
+
+    @RequestMapping("/find/{username}")
+    public Account find(@PathVariable String username) {
+        return repository.findByUsername(username);
     }
 
 }

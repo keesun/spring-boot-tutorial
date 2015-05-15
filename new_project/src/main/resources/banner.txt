@@ -1,0 +1,6 @@
+/\ \       /\  __ \   /\ \
+\ \ \____  \ \ \/\ \  \ \ \____
+ \ \_____\  \ \_____\  \ \_____\
+  \/_____/   \/_____/   \/_____/
+${application.formatted-version}
+${spring-boot.formatted-version}
